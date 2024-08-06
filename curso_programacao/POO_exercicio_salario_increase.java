@@ -13,7 +13,7 @@ package curso_programacao;
 import java.util.Locale;
 import java.util.Scanner;
 
-import entities.Employee;
+import entities.Employee3;
 
 public class POO_exercicio_salario_increase {
 
@@ -21,7 +21,7 @@ public class POO_exercicio_salario_increase {
 		
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
-		Employee funcionario = new Employee();
+		Employee3 funcionario = new Employee3();
 		
 		System.out.print("Digite o nome do funcionário: ");
 		funcionario.name = sc.nextLine();

@@ -2,7 +2,7 @@ package curso_programacao;
 
 import java.util.Locale;
 import java.util.Scanner;
-import entities.Account;
+import entities.Account_1;
 
 public class Acount_Application {
 	
@@ -10,7 +10,7 @@ public class Acount_Application {
 	
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
-		Account account;
+		Account_1 account;
 		
 		System.out.print("Enter account number: ");
 		int number = sc.nextInt();
@@ -23,10 +23,10 @@ public class Acount_Application {
 		if(response == 'y') {
 			System.out.print("Enter initial deposit value: ");
 			double initialDeposit = sc.nextDouble();
-			account = new Account(number, holder, initialDeposit);
+			account = new Account_1(number, holder, initialDeposit);
 		}
 		else {
-			account = new Account(number, holder);
+			account = new Account_1(number, holder);
 		}
 		
 		System.out.println();
