@@ -2,7 +2,7 @@ package entities;
 
 public class Employee {
 
-	private String name;
+	public String name;
 	protected Integer hours;
 	protected Double valuePerHour;
 	
@@ -43,5 +43,12 @@ public class Employee {
 	public Double payment() {
 		return hours * valuePerHour;
 	}
+
+	@Override
+	public String toString() {
+		return name + " - $ " + payment();
+	}
+	
+	
 	
 }
